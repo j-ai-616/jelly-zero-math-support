@@ -11,7 +11,7 @@ That everyday number game became a playful mobile puzzle experience with adorabl
 
 <table>
   <tr>
-    <td><img src="https://i.ibb.co/hxKjw402/01.png" width="80%"></td>
+    <td><center><img src="https://i.ibb.co/hxKjw402/01.png" width="80%"></center></td>
     <td><img src="https://i.ibb.co/RGf02tMR/02.png" width="80%"></td>
   </tr>
   <tr>
