@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelly Zero Math Support</title>
+  <style>
+    :root {
+      --bg: #090814;
+      --card: #151329;
+      --card-soft: #1f1b3d;
+      --text: #f8f7ff;
+      --muted: #c9c4e8;
+      --accent: #9d7cff;
+      --accent2: #35e8ff;
+      --line: rgba(255,255,255,0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(157,124,255,0.35), transparent 32%),
+        radial-gradient(circle at top right, rgba(53,232,255,0.18), transparent 30%),
+        linear-gradient(180deg, #080713 0%, #0c0b18 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 48px 20px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(21,19,41,0.82);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.32);
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.3rem, 6vw, 4.4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      background: linear-gradient(90deg, #ffffff, #bfa7ff, #35e8ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    section {
+      margin-top: 44px;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin: 0 0 18px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .card {
+      background: rgba(21,19,41,0.9);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #000;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(157,124,255,0.18);
+      color: #ddd4ff;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .footer {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      .screenshots,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 28px 14px 56px;
+      }
+
+      .hero {
+        padding: 36px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Jelly Zero Math</h1>
+      <p>
+        A colorful neon-style math puzzle game where players combine numbers and symbols
+        to create equations equal to zero.
+      </p>
+    </header>
+
+    <section>
+      <div class="card">
+        <h2>About the Game</h2>
+        <p>
+          Jelly Zero Math was inspired by a small habit the developer has enjoyed since childhood:
+          looking at the four digits on car license plates and trying to make <strong>0</strong>
+          using mathematical operations.
+        </p>
+        <p>
+          That everyday number game became a playful mobile puzzle experience with adorable jelly friends.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <img src="https://i.ibb.co/hxKjw402/01.png" alt="Jelly Zero Math screenshot 01">
+        <img src="https://i.ibb.co/RGf02tMR/02.png" alt="Jelly Zero Math screenshot 02">
+        <img src="https://i.ibb.co/G4zxF1Xj/03.png" alt="Jelly Zero Math screenshot 03">
+        <img src="https://i.ibb.co/fV2Dtbzx/04.png" alt="Jelly Zero Math screenshot 04">
+        <img src="https://i.ibb.co/35WMnqqg/05.png" alt="Jelly Zero Math screenshot 05">
+        <img src="https://i.ibb.co/V0SGF6cp/06.png" alt="Jelly Zero Math screenshot 06">
+        <img src="https://i.ibb.co/pr3TPQXp/07.png" alt="Jelly Zero Math screenshot 07">
+        <img src="https://i.ibb.co/tPKVnq7J/08.png" alt="Jelly Zero Math screenshot 08">
+        <img src="https://i.ibb.co/sdr6WSzH/09.png" alt="Jelly Zero Math screenshot 09">
+        <img src="https://i.ibb.co/VpDYgK8Z/10.png" alt="Jelly Zero Math screenshot 10">
+      </div>
+    </section>
+
+    <section>
+      <h2>How to Play</h2>
+      <div class="card">
+        <p>
+          The goal is simple: use the given numbers and math buttons to create an equation
+          whose final result is exactly <strong>0</strong>.
+        </p>
+        <p>
+          Try different combinations, check your result, and discover jelly reactions as you solve puzzles.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Button Guide</h2>
+
+      <div class="grid">
+        <div class="card">
+          <span class="badge">Numbers</span>
+          <h3>Number Buttons</h3>
+          <p>
+            Tap the given number buttons to add them to your equation.
+            Each puzzle gives you a limited set of numbers, so the challenge is to use them creatively.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Operators</span>
+          <h3>+, −, ×, ÷</h3>
+          <p>
+            These are the basic arithmetic operators.
+            Use them to connect numbers and build an equation that results in zero.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Brackets</span>
+          <h3>( )</h3>
+          <p>
+            Brackets change the calculation order.
+            They are useful when you need part of the equation to be calculated first.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Square Root</span>
+          <h3>√</h3>
+          <p>
+            The square root button applies a square root to a number or expression.
+            For example, √9 becomes 3.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Negative</span>
+          <h3>(-)</h3>
+          <p>
+            The <strong>(-)</strong> button converts a number into a negative value.
+            For example, using it with 5 can turn it into -5.
+          </p>
+          <p>
+            This is different from the subtraction operator. It is used to change the sign of a number.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Combine</span>
+          <h3>Combine</h3>
+          <p>
+            The <strong>Combine</strong> button joins selected digits or numbers into a larger number
+            when the puzzle allows it.
+          </p>
+          <p>
+            For example, 1 and 2 may be combined into 12, giving you more creative ways to make zero.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Check</span>
+          <h3>Check</h3>
+          <p>
+            Tap <strong>Check</strong> when you think your equation equals zero.
+            The app will evaluate your equation and show whether your answer is correct.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">New Puzzle</span>
+          <h3>New Puzzle</h3>
+          <p>
+            Tap <strong>New Puzzle</strong> to start a new challenge with a different set of numbers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <div class="card">
+        <ul>
+          <li>Cute jelly characters with unique reactions</li>
+          <li>Fast and satisfying math puzzle gameplay</li>
+          <li>Creative equation combinations</li>
+          <li>History tracking for successful solutions</li>
+          <li>Neon-inspired arcade-style interface</li>
+          <li>Simple rules with challenging puzzle possibilities</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>App Store</h2>
+      <div class="card">
+        <p>
+          The App Store link will be updated after release.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          For support or questions, please contact:
+          <a href="mailto:yjson616@gmail.com">yjson616@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Developed by <strong>Jieun Son</strong></p>
+      <p>© 2026 Risonanza Studio</p>
+    </footer>
+  </main>
+</body>
+</html>
