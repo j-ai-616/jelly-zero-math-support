@@ -11,24 +11,24 @@ That everyday number game became a playful mobile puzzle experience with adorabl
 
 <table>
   <tr>
-    <td><img src="https://i.ibb.co/hxKjw402/01.png" width="100%"></td>
-    <td><img src="https://i.ibb.co/RGf02tMR/02.png" width="100%"></td>
+    <td><img src="https://i.ibb.co/hxKjw402/01.png" width="80%"></td>
+    <td><img src="https://i.ibb.co/RGf02tMR/02.png" width="80%"></td>
   </tr>
   <tr>
-    <td><img src="https://i.ibb.co/G4zxF1Xj/03.png" width="100%"></td>
-    <td><img src="https://i.ibb.co/fV2Dtbzx/04.png" width="100%"></td>
+    <td><img src="https://i.ibb.co/G4zxF1Xj/03.png" width="80%"></td>
+    <td><img src="https://i.ibb.co/fV2Dtbzx/04.png" width="80%"></td>
   </tr>
   <tr>
-    <td><img src="https://i.ibb.co/35WMnqqg/05.png" width="100%"></td>
-    <td><img src="https://i.ibb.co/V0SGF6cp/06.png" width="100%"></td>
+    <td><img src="https://i.ibb.co/35WMnqqg/05.png" width="80%"></td>
+    <td><img src="https://i.ibb.co/V0SGF6cp/06.png" width="80%"></td>
   </tr>
   <tr>
-    <td><img src="https://i.ibb.co/pr3TPQXp/07.png" width="100%"></td>
-    <td><img src="https://i.ibb.co/tPKVnq7J/08.png" width="100%"></td>
+    <td><img src="https://i.ibb.co/pr3TPQXp/07.png" width="80%"></td>
+    <td><img src="https://i.ibb.co/tPKVnq7J/08.png" width="80%"></td>
   </tr>
   <tr>
-    <td><img src="https://i.ibb.co/sdr6WSzH/09.png" width="100%"></td>
-    <td><img src="https://i.ibb.co/VpDYgK8Z/10.png" width="100%"></td>
+    <td><img src="https://i.ibb.co/sdr6WSzH/09.png" width="80%"></td>
+    <td><img src="https://i.ibb.co/VpDYgK8Z/10.png" width="80%"></td>
   </tr>
 </table>
 
