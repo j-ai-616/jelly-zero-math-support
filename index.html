@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jelly Zero Math Support</title>
+
   <style>
     :root {
       --bg: #090814;
       --card: #151329;
-      --card-soft: #1f1b3d;
       --text: #f8f7ff;
       --muted: #c9c4e8;
       --accent: #9d7cff;
@@ -94,24 +94,27 @@
       margin-bottom: 18px;
     }
 
+    .grid,
     .screenshots {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
     }
 
-    .screenshots img {
-      width: 100%;
-      display: block;
+    .screenshot-frame {
+      aspect-ratio: 9 / 19.5;
       border-radius: 18px;
+      overflow: hidden;
       border: 1px solid var(--line);
       background: #000;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
+    .screenshot-frame img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
     }
 
     .badge {
@@ -122,6 +125,30 @@
       color: #ddd4ff;
       font-size: 0.9rem;
       margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 8px 0 10px;
+    }
+
+    .formula {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: rgba(53,232,255,0.12);
+      border: 1px solid rgba(53,232,255,0.28);
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
     ul {
@@ -139,8 +166,8 @@
     }
 
     @media (max-width: 720px) {
-      .screenshots,
-      .grid {
+      .grid,
+      .screenshots {
         grid-template-columns: 1fr;
       }
 
@@ -162,6 +189,8 @@
       <p>
         A colorful neon-style math puzzle game where players combine numbers and symbols
         to create equations equal to zero.
+        <br><br>
+        Play 7 puzzles for free, then unlock unlimited play forever for $1.99.
       </p>
     </header>
 
@@ -175,23 +204,52 @@
         </p>
         <p>
           That everyday number game became a playful mobile puzzle experience with adorable jelly friends.
+          It is simple to start, but full of creative possibilities.
         </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pricing</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="badge">Free Trial</span>
+          <h3>7 Free Puzzles</h3>
+          <p class="highlight">Free to try</p>
+          <p>
+            Enjoy the first 7 puzzles completely free. Learn the rules,
+            experiment with equations, and meet adorable jelly friends.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Full Version</span>
+          <h3>Unlimited Play Forever</h3>
+          <p class="highlight">$1.99 one-time purchase</p>
+          <p>
+            Unlock unlimited puzzles forever with a one-time purchase of
+            <strong>$1.99</strong>.
+          </p>
+          <p class="note">
+            No subscription. No ads. Just pure neon-style math puzzle fun.
+          </p>
+        </div>
       </div>
     </section>
 
     <section>
       <h2>Screenshots</h2>
       <div class="screenshots">
-        <img src="https://i.ibb.co/hxKjw402/01.png" alt="Jelly Zero Math screenshot 01">
-        <img src="https://i.ibb.co/RGf02tMR/02.png" alt="Jelly Zero Math screenshot 02">
-        <img src="https://i.ibb.co/G4zxF1Xj/03.png" alt="Jelly Zero Math screenshot 03">
-        <img src="https://i.ibb.co/fV2Dtbzx/04.png" alt="Jelly Zero Math screenshot 04">
-        <img src="https://i.ibb.co/35WMnqqg/05.png" alt="Jelly Zero Math screenshot 05">
-        <img src="https://i.ibb.co/V0SGF6cp/06.png" alt="Jelly Zero Math screenshot 06">
-        <img src="https://i.ibb.co/pr3TPQXp/07.png" alt="Jelly Zero Math screenshot 07">
-        <img src="https://i.ibb.co/tPKVnq7J/08.png" alt="Jelly Zero Math screenshot 08">
-        <img src="https://i.ibb.co/sdr6WSzH/09.png" alt="Jelly Zero Math screenshot 09">
-        <img src="https://i.ibb.co/VpDYgK8Z/10.png" alt="Jelly Zero Math screenshot 10">
+        <div class="screenshot-frame"><img src="https://i.ibb.co/hxKjw402/01.png" alt="Jelly Zero Math screenshot 01"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/RGf02tMR/02.png" alt="Jelly Zero Math screenshot 02"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/G4zxF1Xj/03.png" alt="Jelly Zero Math screenshot 03"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/fV2Dtbzx/04.png" alt="Jelly Zero Math screenshot 04"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/35WMnqqg/05.png" alt="Jelly Zero Math screenshot 05"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/V0SGF6cp/06.png" alt="Jelly Zero Math screenshot 06"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/pr3TPQXp/07.png" alt="Jelly Zero Math screenshot 07"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/tPKVnq7J/08.png" alt="Jelly Zero Math screenshot 08"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/sdr6WSzH/09.png" alt="Jelly Zero Math screenshot 09"></div>
+        <div class="screenshot-frame"><img src="https://i.ibb.co/VpDYgK8Z/10.png" alt="Jelly Zero Math screenshot 10"></div>
       </div>
     </section>
 
@@ -209,8 +267,57 @@
     </section>
 
     <section>
-      <h2>Button Guide</h2>
+      <h2>Strategy Tips</h2>
+      <div class="card">
+        <p>
+          Jelly Zero Math becomes more interesting when you do not simply multiply by 0.
+          Try to train your brain by combining numbers, changing signs, using brackets,
+          and applying square roots.
+        </p>
 
+        <p>
+          For example, if the numbers are <strong>0, 1, 5, 2</strong>,
+          you can use <strong>Combine</strong> to make 10:
+        </p>
+
+        <p class="formula">
+          10 − (5 × 2) = 0
+        </p>
+
+        <p>
+          This means the puzzle is not only about finding the fastest answer.
+          It is also about discovering creative ways to build zero.
+        </p>
+
+        <p class="note">
+          Tip: Look carefully at the screenshots above to see how number buttons,
+          operators, brackets, square roots, and Combine can work together.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Puzzle Philosophy</h2>
+      <div class="card">
+        <p>
+          Jelly Zero Math is designed as a light brain-refresh puzzle game.
+          You can enjoy it during small breaks, while still giving your brain
+          a creative math workout.
+        </p>
+
+        <p>
+          Some puzzles may feel tricky, and not every path is obvious right away.
+          If a puzzle feels too difficult, feel free to move on to a new one.
+        </p>
+
+        <p>
+          Future updates may refine puzzle generation and add more playful challenges.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Button Guide</h2>
       <div class="grid">
         <div class="card">
           <span class="badge">Numbers</span>
@@ -225,8 +332,7 @@
           <span class="badge">Operators</span>
           <h3>+, −, ×, ÷</h3>
           <p>
-            These are the basic arithmetic operators.
-            Use them to connect numbers and build an equation that results in zero.
+            Use basic arithmetic operators to connect numbers and build an equation that results in zero.
           </p>
         </div>
 
@@ -234,8 +340,7 @@
           <span class="badge">Brackets</span>
           <h3>( )</h3>
           <p>
-            Brackets change the calculation order.
-            They are useful when you need part of the equation to be calculated first.
+            Brackets change the calculation order and help you control which part of the equation is solved first.
           </p>
         </div>
 
@@ -252,11 +357,8 @@
           <span class="badge">Negative</span>
           <h3>(-)</h3>
           <p>
-            The <strong>(-)</strong> button converts a number into a negative value.
-            For example, using it with 5 can turn it into -5.
-          </p>
-          <p>
-            This is different from the subtraction operator. It is used to change the sign of a number.
+            The <strong>(-)</strong> button changes a number into a negative value.
+            This is different from the subtraction operator.
           </p>
         </div>
 
@@ -264,11 +366,8 @@
           <span class="badge">Combine</span>
           <h3>Combine</h3>
           <p>
-            The <strong>Combine</strong> button joins selected digits or numbers into a larger number
-            when the puzzle allows it.
-          </p>
-          <p>
-            For example, 1 and 2 may be combined into 12, giving you more creative ways to make zero.
+            Combine joins selected adjacent digits into a larger number when the puzzle allows it.
+            For example, 1 and 2 can become 12.
           </p>
         </div>
 
@@ -292,6 +391,66 @@
     </section>
 
     <section>
+      <h2>Jelly Result System</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="badge">Blue Jelly</span>
+          <h3>Bracket Jelly</h3>
+          <p>
+            Use brackets <strong>( )</strong> to control calculation order.
+            Solving a puzzle with brackets can summon the blue jelly.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Purple Jelly</span>
+          <h3>Root Jelly</h3>
+          <p>
+            Use the <strong>√</strong> button to apply square roots.
+            Creative root-based solutions can unlock the purple jelly.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Pink Jelly</span>
+          <h3>Negative Jelly</h3>
+          <p>
+            Use <strong>(-)</strong> to turn numbers into negative values.
+            Negative-number strategies can reveal the pink jelly.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Green Jelly</span>
+          <h3>Combine Jelly</h3>
+          <p>
+            Use <strong>Combine</strong> to merge adjacent digits into larger numbers.
+            Smart combinations can unlock the green jelly.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Yellow Jelly</span>
+          <h3>Genius Jelly</h3>
+          <p>
+            Use multiple advanced strategies together —
+            such as brackets, square roots, negatives, or Combine —
+            to discover the special Genius Jelly.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Jelly Charm</span>
+          <h3>Every Solution Feels Different</h3>
+          <p>
+            Every path to zero has its own jelly charm.
+            Try different strategies and enjoy the surprise of each result.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>Features</h2>
       <div class="card">
         <ul>
@@ -301,6 +460,8 @@
           <li>History tracking for successful solutions</li>
           <li>Neon-inspired arcade-style interface</li>
           <li>Simple rules with challenging puzzle possibilities</li>
+          <li>7 free puzzles included</li>
+          <li>Unlimited play available with a one-time purchase</li>
         </ul>
       </div>
     </section>
@@ -319,7 +480,7 @@
       <div class="card">
         <p>
           For support or questions, please contact:
-          <a href="mailto:yjson616@gmail.com">contact@risonanza.kr</a>
+          <a href="mailto:contact@risonanza.kr">contact@risonanza.kr</a>
         </p>
       </div>
     </section>
