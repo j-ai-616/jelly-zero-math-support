@@ -124,6 +124,7 @@
       background: rgba(157,124,255,0.18);
       color: #ddd4ff;
       font-size: 0.9rem;
+      font-weight: 700;
       margin-bottom: 10px;
     }
 
@@ -149,6 +150,89 @@
     .note {
       color: var(--muted);
       font-size: 0.95rem;
+    }
+
+    .jelly-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .jelly-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+
+    .jelly-blue {
+      border-color: rgba(53,232,255,0.36);
+      box-shadow: 0 0 22px rgba(53,232,255,0.12);
+    }
+
+    .jelly-blue::before {
+      background: radial-gradient(circle at top left, rgba(53,232,255,0.95), transparent 42%);
+    }
+
+    .jelly-blue .badge {
+      background: rgba(53,232,255,0.16);
+      color: #bdf8ff;
+    }
+
+    .jelly-purple {
+      border-color: rgba(157,124,255,0.42);
+      box-shadow: 0 0 22px rgba(157,124,255,0.14);
+    }
+
+    .jelly-purple::before {
+      background: radial-gradient(circle at top left, rgba(157,124,255,0.95), transparent 42%);
+    }
+
+    .jelly-purple .badge {
+      background: rgba(157,124,255,0.20);
+      color: #ddd4ff;
+    }
+
+    .jelly-pink {
+      border-color: rgba(255,79,179,0.36);
+      box-shadow: 0 0 22px rgba(255,79,179,0.12);
+    }
+
+    .jelly-pink::before {
+      background: radial-gradient(circle at top left, rgba(255,79,179,0.95), transparent 42%);
+    }
+
+    .jelly-pink .badge {
+      background: rgba(255,79,179,0.17);
+      color: #ffd1ec;
+    }
+
+    .jelly-green {
+      border-color: rgba(79,255,174,0.36);
+      box-shadow: 0 0 22px rgba(79,255,174,0.12);
+    }
+
+    .jelly-green::before {
+      background: radial-gradient(circle at top left, rgba(79,255,174,0.95), transparent 42%);
+    }
+
+    .jelly-green .badge {
+      background: rgba(79,255,174,0.16);
+      color: #c8ffe5;
+    }
+
+    .jelly-yellow {
+      border-color: rgba(255,215,79,0.42);
+      box-shadow: 0 0 22px rgba(255,215,79,0.13);
+    }
+
+    .jelly-yellow::before {
+      background: radial-gradient(circle at top left, rgba(255,215,79,0.95), transparent 42%);
+    }
+
+    .jelly-yellow .badge {
+      background: rgba(255,215,79,0.18);
+      color: #fff1b7;
     }
 
     ul {
@@ -393,7 +477,7 @@
     <section>
       <h2>Jelly Result System</h2>
       <div class="grid">
-        <div class="card">
+        <div class="card jelly-card jelly-blue">
           <span class="badge">Blue Jelly</span>
           <h3>Bracket Jelly</h3>
           <p>
@@ -402,7 +486,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card jelly-card jelly-purple">
           <span class="badge">Purple Jelly</span>
           <h3>Root Jelly</h3>
           <p>
@@ -411,7 +495,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card jelly-card jelly-pink">
           <span class="badge">Pink Jelly</span>
           <h3>Negative Jelly</h3>
           <p>
@@ -420,7 +504,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card jelly-card jelly-green">
           <span class="badge">Green Jelly</span>
           <h3>Combine Jelly</h3>
           <p>
@@ -429,7 +513,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card jelly-card jelly-yellow">
           <span class="badge">Yellow Jelly</span>
           <h3>Genius Jelly</h3>
           <p>
@@ -439,7 +523,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card jelly-card">
           <span class="badge">Jelly Charm</span>
           <h3>Every Solution Feels Different</h3>
           <p>
